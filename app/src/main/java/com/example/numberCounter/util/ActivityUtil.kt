@@ -1,4 +1,4 @@
-package com.example.numbercounter.util
+package com.example.numberCounter.util
 
 import android.app.Activity
 import android.content.Intent

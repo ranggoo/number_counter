@@ -1,17 +1,15 @@
-package com.example.numbercounter
+package com.example.numberCounter
 
 import android.animation.ValueAnimator
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
-import com.example.numbercounter.databinding.ActivitySplashBinding
-import com.example.numbercounter.util.ActivityUtil.goStartActivity
-import com.example.numbercounter.util.ActivityUtil.setStatusBarTransparent
-import kotlinx.coroutines.delay
+import com.example.numberCounter.databinding.ActivitySplashBinding
+import com.example.numberCounter.util.ActivityUtil.goStartActivity
+import com.example.numberCounter.util.ActivityUtil.setStatusBarTransparent
 
 class SplashActivity : AppCompatActivity() {
 
@@ -20,7 +18,6 @@ class SplashActivity : AppCompatActivity() {
     private val binding get() = _binding!!
 
     lateinit var fadeInAnim: Animation
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,11 +47,7 @@ class SplashActivity : AppCompatActivity() {
     // 액티비티 화면 이동 시 화면 유지? 시간
     private fun delayedMove(delayMills:Int){
         Handler(Looper.getMainLooper()).postDelayed({
-            goStartActivity<MainActivity> {  }
+            goStartActivity<HomeActivity> { }
         },delayMills.toLong())
     }
-
-
-
-
 }

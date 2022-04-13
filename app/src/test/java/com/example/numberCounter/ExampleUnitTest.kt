@@ -1,4 +1,4 @@
-package com.example.numbercounter
+package com.example.numberCounter
 
 import org.junit.Test
 
