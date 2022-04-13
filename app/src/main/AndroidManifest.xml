@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.numbercounter">
+    package="com.example.numberCounter">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NumberCounter">
         <activity
-            android:name=".SplashActivity"
+            android:name="com.example.numberCounter.SplashActivity"
             android:exported="true">
 
             <intent-filter>
@@ -21,7 +21,7 @@
 
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.numberCounter.HomeActivity"
             android:exported="true"/>
 
     </application>
