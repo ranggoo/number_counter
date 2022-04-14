@@ -21,18 +21,19 @@
         android:layout_marginEnd="15dp"
         android:src="@drawable/icon_full_heart"
         app:layout_constraintBottom_toTopOf="@id/divider"
-        app:layout_constraintEnd_toStartOf="@id/iv_reset"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_reset"
-        android:layout_width="50dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:padding="5dp"
         android:src="@drawable/icon_reset_name"
-        app:layout_constraintBottom_toTopOf="@id/divider"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/divider" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_back"
@@ -56,13 +57,13 @@
         android:maxLines="1"
         android:text="카운트"
         android:textColor="@color/black"
-        android:textSize="50sp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toStartOf="@id/iv_like"
         app:layout_constraintStart_toEndOf="@id/iv_back"
         app:layout_constraintBottom_toTopOf="@id/divider"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_count"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -78,22 +79,22 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_minus"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@color/red"
         android:src="@drawable/icon_minus"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divider" />
+        app:layout_constraintBottom_toTopOf="@id/iv_plus" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_plus"
-        android:background="@color/seaBlue"
         android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:src="@drawable/ic_plus"
+        android:background="@color/seaBlue"
         android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:src="@drawable/ic_plus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
