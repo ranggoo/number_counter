@@ -69,7 +69,7 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:fontFamily="@font/main_font_ttf"
-        android:text="10"
+        android:text="0"
         android:textColor="@color/black"
         android:textSize="200dp"
         app:layout_constraintBottom_toTopOf="@id/iv_plus"
@@ -79,8 +79,8 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_minus"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@color/red"
         android:src="@drawable/icon_minus"
         app:layout_constraintEnd_toEndOf="parent"
